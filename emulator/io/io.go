@@ -26,30 +26,30 @@ type IO interface {
 type EventType string
 
 const (
-	KeyDown = EventType("KeyDown")
-	KeyUp   = EventType("KeyUp")
-	Quit    = EventType("Quit")
+	KeyDown EventType = "KeyDown"
+	KeyUp   EventType = "KeyUp"
+	Quit    EventType = "Quit"
 )
 
 type Key uint16
 
 const (
-	Key0 = 0x0001
-	Key1 = 0x0002
-	Key2 = 0x0004
-	Key3 = 0x0008
-	Key4 = 0x0010
-	Key5 = 0x0020
-	Key6 = 0x0040
-	Key7 = 0x0080
-	Key8 = 0x0100
-	Key9 = 0x0200
-	KeyA = 0x0400
-	KeyB = 0x0800
-	KeyC = 0x1000
-	KeyD = 0x2000
-	KeyE = 0x4000
-	KeyF = 0x8000
+	Key0 Key = 0x0001
+	Key1 Key = 0x0002
+	Key2 Key = 0x0004
+	Key3 Key = 0x0008
+	Key4 Key = 0x0010
+	Key5 Key = 0x0020
+	Key6 Key = 0x0040
+	Key7 Key = 0x0080
+	Key8 Key = 0x0100
+	Key9 Key = 0x0200
+	KeyA Key = 0x0400
+	KeyB Key = 0x0800
+	KeyC Key = 0x1000
+	KeyD Key = 0x2000
+	KeyE Key = 0x4000
+	KeyF Key = 0x8000
 )
 
 type InputEvent struct {
